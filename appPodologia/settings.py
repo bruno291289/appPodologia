@@ -82,9 +82,9 @@ WSGI_APPLICATION = 'appPodologia.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'podologia',
-        'USER': 'apppodologia',
-        'PASSWORD': 'apppodologia',
+        'NAME': 'apppodologia',
+        'USER': 'adminnfzgweh',
+        'PASSWORD': 'ssMWiBjxrj3v',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
