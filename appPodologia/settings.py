@@ -80,16 +80,12 @@ WSGI_APPLICATION = 'appPodologia.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-url = urlparse.urlparse(os.environ.get('OPENSHIFT_POSTGRESQL_DB_URL'))
-
-    DATABASES['default'] = {
-        'ENGINE' : 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ['OPENSHIFT_APP_NAME'],
-        'USER': url.username,
-        'PASSWORD': url.password,
-        'HOST': url.hostname,
-        'PORT': url.port,
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
+}
 
 
 # Internationalization
